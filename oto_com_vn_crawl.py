@@ -44,8 +44,8 @@ for href in href_ls:
 
     box_info_detail = soup.find('div', class_='box-info-detail')
     li = box_info_detail.find_all('li')
-    print(len(li))
-
+    for l in li:
+        print(l.decode('utf-8').get_text())
 
 
 
